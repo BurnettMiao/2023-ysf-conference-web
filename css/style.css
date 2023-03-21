@@ -64,6 +64,10 @@ h3 {
   letter-spacing: 5px;
 }
 
+i {
+  font-size: 1.8rem;
+}
+
 .container {
   max-width: 110rem;
   margin: 0 auto;
@@ -119,6 +123,11 @@ h3 {
 .title {
   font-weight: 700;
   font-size: 2rem;
+}
+
+#mobile-menu {
+  cursor: pointer;
+  display: none;
 }
 
 /* main section */
@@ -325,4 +334,79 @@ td {
 .partner {
   color: var(--bg-color);
   font-weight: 300;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  /* header section */
+  #mobile-menu {
+    display: block;
+    font-size: 2rem;
+  }
+
+  #mobile-menu.fa-xmark {
+    transform: rotate(180deg);
+  }
+
+  .nav-right {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-color);
+    border-top: 1px solid var(--secondary-font-color);
+    border-bottom: 1px solid var(--secondary-font-color);
+    flex-direction: column;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .nav-right.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /* main section */
+  .main-text {
+    margin: 2rem 0;
+  }
+
+  /* footer section */
+  .footer-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  /* story section */
+  .story-container {
+    flex-direction: column;
+  }
+
+  /* speakers section */
+  #speakers {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  /* agenda section */
+  #agenda {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  /* footer section */
+  .footer-container {
+    justify-content: center;
+    gap: 5rem;
+  }
 }
