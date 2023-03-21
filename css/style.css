@@ -21,6 +21,8 @@ html {
   background-color: var(--bg-color);
   font-size: 62.5%;
   line-height: 1.7;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 a {
