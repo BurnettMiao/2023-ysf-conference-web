@@ -409,4 +409,8 @@ td {
     justify-content: center;
     gap: 5rem;
   }
+
+  table {
+    font-size: 1.6rem;
+  }
 }
