@@ -319,6 +319,8 @@ td {
 /* footer section */
 #footer {
   background-color: var(--main-font-color);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .footer-container {
