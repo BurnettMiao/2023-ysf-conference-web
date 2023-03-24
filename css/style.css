@@ -158,6 +158,12 @@ i {
   font-weight: 300;
 }
 
+.date {
+  color: var(--bg-color);
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
 /* story section */
 #story {
   color: var(--main-font-color);
@@ -340,6 +346,10 @@ td {
   font-weight: 300;
 }
 
+.footer-date {
+  color: var(--bg-color);
+}
+
 /* media queries */
 @media (max-width: 768px) {
   /* header section */
@@ -386,7 +396,7 @@ td {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 425px) {
   h1 {
     font-size: 4rem;
   }
@@ -416,5 +426,10 @@ td {
 
   table {
     font-size: 1.6rem;
+  }
+
+  .footer-date {
+    color: var(--bg-color);
+    text-align: center;
   }
 }
